@@ -1,3 +1,3 @@
-class Vote < ActiveRecord::Base
-  belongs_to :topic
+class Topic < ActiveRecord::Base
+    has_many :votes, dependent: :destroy
 end
